@@ -1,0 +1,104 @@
+site_name: Job Apply and Recommendation System
+site_description: Documentation for the automated job application system
+site_author: Your Team
+site_url: https://your-domain.com/docs
+
+repo_name: job-apply-recommendation-system
+repo_url: https://github.com/your-username/job-apply-recommendation-system
+edit_uri: edit/main/docs/
+
+copyright: Copyright &copy; 2024 Your Organization
+
+theme:
+  name: material
+  palette:
+    primary: blue
+    accent: blue
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.expand
+    - navigation.path
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: google
+            show_source: true
+            show_root_heading: true
+            show_object_full_path: false
+            show_category_heading: true
+            show_labels: true
+            show_symbol_type_heading: true
+            show_symbol_type_toc: true
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: installation.md
+      - Quick Start: quick-start.md
+      - Configuration: configuration.md
+  - API Reference:
+      - Overview: api/index.md
+      - Authentication: api/auth.md
+      - Job Management: api/jobs.md
+      - Student Management: api/students.md
+  - Development:
+      - Contributing: contributing.md
+      - Testing: testing.md
+      - Code Quality: code-quality.md
+      - Deployment: deployment.md
+  - Architecture:
+      - System Overview: architecture.md
+      - Database Schema: database.md
+      - Background Tasks: tasks.md
+      - Security: security.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - attr_list
+  - footnotes
+  - md_in_html
+  - meta
+  - tables
+  - toc:
+      permalink: true
+      permalink_title: Anchor link to this section for reference
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/your-username/job-apply-recommendation-system
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/company/your-company
+
+  generator: false
