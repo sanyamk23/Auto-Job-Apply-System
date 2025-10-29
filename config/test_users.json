@@ -1,0 +1,63 @@
+[
+  {
+    "user_id": "user_001",
+    "name": "Alex Johnson",
+    "email": "alex.johnson@example.com",
+    "phone": "+1-555-0101",
+    "resume_path": "data/sample_resume.txt",
+    "resume_summary": "Computer Science graduate with 2 years of experience in full-stack development. Skilled in Python, JavaScript, React, and Node.js. Looking for remote software engineering roles.",
+    "skills": ["Python", "JavaScript", "React", "Node.js", "MongoDB", "AWS", "Docker"],
+    "experience": "2 years",
+    "education": ["Bachelor of Science in Computer Science - University of Tech"],
+    "preferred_roles": ["Software Engineer", "Full Stack Developer", "Backend Developer"],
+    "preferred_locations": ["Remote", "New York", "San Francisco"],
+    "experience_level": "Mid-level",
+    "preferred_industries": ["Technology", "SaaS", "FinTech"],
+    "salary_expectation": "$80,000 - $120,000"
+  },
+  {
+    "user_id": "user_002", 
+    "name": "Sarah Chen",
+    "email": "sarah.chen@example.com",
+    "phone": "+1-555-0102",
+    "resume_summary": "Data Scientist with 3 years of experience in machine learning and data analysis. Strong background in Python, SQL, and statistical modeling. Seeking data science roles in healthcare or tech.",
+    "skills": ["Python", "SQL", "Machine Learning", "TensorFlow", "PyTorch", "Pandas", "Tableau"],
+    "experience": "3 years",
+    "education": ["Master of Science in Data Science - Data University", "Bachelor of Statistics - Math College"],
+    "preferred_roles": ["Data Scientist", "Machine Learning Engineer", "Data Analyst"],
+    "preferred_locations": ["Boston", "Austin", "Remote"],
+    "experience_level": "Senior",
+    "preferred_industries": ["Healthcare", "Technology", "Finance"],
+    "salary_expectation": "$100,000 - $140,000"
+  },
+  {
+    "user_id": "user_003",
+    "name": "Mike Rodriguez",
+    "email": "mike.rodriguez@example.com", 
+    "phone": "+1-555-0103",
+    "resume_summary": "Frontend Developer specializing in React and TypeScript. 1 year of experience building responsive web applications. Looking for junior frontend roles in startup environments.",
+    "skills": ["JavaScript", "TypeScript", "React", "HTML5", "CSS3", "Git", "Figma"],
+    "experience": "1 year",
+    "education": ["Bootcamp Certificate - Frontend Development", "Bachelor of Arts in Design"],
+    "preferred_roles": ["Frontend Developer", "UI Developer", "React Developer"],
+    "preferred_locations": ["Austin", "Remote", "Miami"],
+    "experience_level": "Entry-level",
+    "preferred_industries": ["Startups", "E-commerce", "Media"],
+    "salary_expectation": "$60,000 - $85,000"
+  },
+  {
+    "user_id": "user_004",
+    "name": "Emily Watson",
+    "email": "emily.watson@example.com",
+    "phone": "+1-555-0104",
+    "resume_summary": "DevOps Engineer with 4 years of experience in cloud infrastructure and CI/CD. Expertise in AWS, Kubernetes, and Terraform. Seeking senior DevOps roles.",
+    "skills": ["AWS", "Kubernetes", "Docker", "Terraform", "Jenkins", "Python", "Linux"],
+    "experience": "4 years", 
+    "education": ["Bachelor of Engineering in Computer Science - Engineering College"],
+    "preferred_roles": ["DevOps Engineer", "Cloud Engineer", "Site Reliability Engineer"],
+    "preferred_locations": ["Remote", "Seattle", "Chicago"],
+    "experience_level": "Senior",
+    "preferred_industries": ["Technology", "Cloud Services", "Enterprise"],
+    "salary_expectation": "$120,000 - $160,000"
+  }
+]
