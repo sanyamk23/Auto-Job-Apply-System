@@ -2,6 +2,7 @@ import json
 import google.generativeai as genai
 from typing import List, Dict, Any
 from config.api_config import APIConfig
+from src.api.linkedin_api import LinkedInAPI
 
 class JobSearchAgent:
     def __init__(self):

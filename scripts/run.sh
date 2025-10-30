@@ -21,3 +21,4 @@ export PYTHONPATH="${PROJECT_ROOT}:${PROJECT_ROOT}/src:${PYTHONPATH:-}"
 
 # Run main
 python "${PROJECT_ROOT}/src/main.py" "$@"
+# uvicorn src.core.api:app --reload --port 8000

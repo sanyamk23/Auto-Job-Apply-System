@@ -2,8 +2,8 @@ import json
 import os
 from datetime import datetime
 from typing import List, Dict, Any
-from app_email.email_service import EmailService
-from core.ai_agent import JobSearchAgent
+from src.app_email.email_service import EmailService
+from src.core.ai_agent import JobSearchAgent
 
 class ApplicationManager:
     def __init__(self):

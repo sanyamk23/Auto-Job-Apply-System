@@ -22,8 +22,8 @@ class APIConfig:
     GOOGLE_SEARCH_ENGINE_ID = os.getenv('GOOGLE_CUSTOM_SEARCH_ENGINE_ID')
     
     # RapidAPI endpoints (alternative job APIs)
-    RAPIDAPI_KEY = os.getenv('RAPIDAPI_KEY')
     JOB_SEARCH_API_URL = "https://jsearch.p.rapidapi.com/search"
+    RAPIDAPI_KEY = os.getenv('RAPIDAPI_KEY', 'd57fdc85ecmsh08ed9f3309fd20cp188d19jsn511a0e593848')
     
     # Email Configuration
     SMTP_SERVER = os.getenv('SMTP_SERVER', 'smtp.gmail.com')
