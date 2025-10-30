@@ -6,6 +6,7 @@ uvicorn[standard]==0.24.0
 sqlalchemy==2.0.23
 alembic==1.13.1
 psycopg2-binary==2.9.9
+psycopg   # Added as lightweight alternative if needed
 
 # Authentication & Security
 python-jose[cryptography]==3.3.0
@@ -23,17 +24,24 @@ redis==5.0.1
 # HTTP Client
 httpx==0.25.2
 aiohttp==3.9.1
+requests==2.31.0
 
 # Web Scraping
-selenium==4.15.2
+selenium>=4.21.0
 beautifulsoup4==4.12.2
 lxml==4.9.3
+polars   # Added for data processing
+
+# Google AI Integration
+google-generativeai
+google-api-python-client
 
 # Email
 aiosmtplib==2.0.0
 
 # Environment & Configuration
 python-dotenv==1.0.0
+loadenv==0.4.0   # Optional: for explicit loadenv usage
 
 # Logging & Monitoring
 structlog==23.2.0
@@ -43,7 +51,6 @@ sentry-sdk[fastapi]==1.38.0
 pytest==7.4.3
 pytest-asyncio==0.21.1
 pytest-cov==4.1.0
-httpx==0.25.2  # For testing FastAPI
 
 # Code Quality
 black==23.11.0
@@ -61,6 +68,3 @@ mkdocs-material==9.4.8
 
 # Development
 pre-commit==3.5.0
-
-# Job Board APIs (if needed)
-# requests==2.31.0  # Uncomment if using REST APIs

@@ -1,0 +1,14 @@
+Alex Johnson
+Software Engineer
+
+Summary:
+Computer Science graduate with 2 years of experience in full-stack development. Skilled in Python, JavaScript, React, Node.js. Experience with AWS and Docker.
+
+Experience:
+- Software Engineer, Startup X (2022-2024): Developed backend services in Python, built React front-ends, improved CI/CD pipelines.
+
+Education:
+- B.S. Computer Science, University of Tech
+
+Skills:
+Python, JavaScript, React, Node.js, AWS, Docker

@@ -1,0 +1,145 @@
+[
+  {
+    "application_id": "app_1",
+    "applicant_name": "Alex Johnson",
+    "applicant_email": "alex.johnson@example.com",
+    "company": "Tech Innovations Inc",
+    "position": "Senior Software Engineer",
+    "applied_at": "2025-10-29T10:49:13.037336",
+    "status": "Applied",
+    "hr_contact": "2004shakti@gmail.com",
+    "location": "Remote"
+  },
+  {
+    "application_id": "app_2",
+    "applicant_name": "Alex Johnson",
+    "applicant_email": "alex.johnson@example.com",
+    "company": "Acme Corp",
+    "position": "Software Engineer",
+    "applied_at": "2025-10-29T13:33:31.784565",
+    "status": "Applied",
+    "hr_contact": "recruiter@acme.example.com",
+    "location": "Remote"
+  },
+  {
+    "application_id": "app_3",
+    "applicant_name": "Alex Johnson",
+    "applicant_email": "alex.johnson@example.com",
+    "company": "Acme Corp",
+    "position": "Software Engineer",
+    "applied_at": "2025-10-29T13:35:24.020221",
+    "status": "Applied",
+    "hr_contact": "recruiter@acme.example.com",
+    "location": "Remote"
+  },
+  {
+    "application_id": "app_4",
+    "applicant_name": "Alex Johnson",
+    "applicant_email": "alex.johnson@example.com",
+    "company": "Acme Corp",
+    "position": "Software Engineer",
+    "applied_at": "2025-10-29T13:35:35.464980",
+    "status": "Applied",
+    "hr_contact": "recruiter@acme.example.com",
+    "location": "Remote"
+  },
+  {
+    "application_id": "app_5",
+    "applicant_name": "Alex Johnson",
+    "applicant_email": "alex.johnson@example.com",
+    "company": "Tech Innovations Inc",
+    "position": "Senior Software Engineer",
+    "applied_at": "2025-10-29T13:40:23.965965",
+    "status": "Applied",
+    "hr_contact": "2004shakti@gmail.com",
+    "location": "Remote"
+  },
+  {
+    "application_id": "app_6",
+    "applicant_name": "Alex Johnson",
+    "applicant_email": "alex.johnson@example.com",
+    "company": "Tech Innovations Inc",
+    "position": "Senior Software Engineer",
+    "applied_at": "2025-10-29T13:41:05.454499",
+    "status": "Applied",
+    "hr_contact": "2004shakti@gmail.com",
+    "location": "Remote"
+  },
+  {
+    "application_id": "app_7",
+    "applicant_name": "Alex Johnson",
+    "applicant_email": "alex.johnson@example.com",
+    "company": "Tech Innovations Inc",
+    "position": "Senior Software Engineer",
+    "applied_at": "2025-10-29T13:42:39.026721",
+    "status": "Applied",
+    "hr_contact": "2004shakti@gmail.com",
+    "location": "Remote"
+  },
+  {
+    "application_id": "app_8",
+    "applicant_name": "Alex Johnson",
+    "applicant_email": "alex.johnson@example.com",
+    "company": "Tech Innovations Inc",
+    "position": "Senior Software Engineer",
+    "applied_at": "2025-10-29T13:42:58.968535",
+    "status": "Applied",
+    "hr_contact": "2004shakti@gmail.com",
+    "location": "Remote"
+  },
+  {
+    "application_id": "app_9",
+    "applicant_name": "Alex Johnson",
+    "applicant_email": "alex.johnson@example.com",
+    "company": "Tech Innovations Inc",
+    "position": "Senior Software Engineer",
+    "applied_at": "2025-10-29T13:47:17.746437",
+    "status": "Applied",
+    "hr_contact": "2004shakti@gmail.com",
+    "location": "Remote"
+  },
+  {
+    "application_id": "app_10",
+    "applicant_name": "Alex Johnson",
+    "applicant_email": "alex.johnson@example.com",
+    "company": "Tech Innovations Inc",
+    "position": "Senior Software Engineer",
+    "applied_at": "2025-10-29T13:49:42.658534",
+    "status": "Applied",
+    "hr_contact": "2004shakti@gmail.com",
+    "location": "Remote"
+  },
+  {
+    "application_id": "app_11",
+    "applicant_name": "Alex Johnson",
+    "applicant_email": "alex.johnson@example.com",
+    "company": "Tech Innovations Inc",
+    "position": "Senior Software Engineer",
+    "applied_at": "2025-10-29T14:32:42.997838",
+    "status": "Applied",
+    "hr_contact": "2004shakti@gmail.com",
+    "location": "Remote"
+  },
+  {
+    "application_id": "app_12",
+    "applicant_name": "Alex Johnson",
+    "applicant_email": "alex.johnson@example.com",
+    "company": "Tech Innovations Inc",
+    "position": "Senior Software Engineer",
+    "applied_at": "2025-10-29T14:53:01.857841",
+    "status": "Applied",
+    "hr_contact": "2004shakti@gmail.com",
+    "location": "Remote"
+  },
+  {
+    "application_id": "app_13",
+    "applicant_name": "Alex Johnson",
+    "applicant_email": "alex.johnson@example.com",
+    "company": "Acme Corp",
+    "position": "Software Engineer",
+    "applied_at": "2025-10-29T15:03:09.212527",
+    "status": "Applied",
+    "hr_contact": "recruiter@acme.example.com",
+    "location": "Remote"
+  }
+]
