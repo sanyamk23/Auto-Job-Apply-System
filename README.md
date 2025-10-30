@@ -113,6 +113,18 @@ pre-commit install
 python src/main.py
 ```
 
+### Run the FastAPI server (development)
+
+If you want to run the newly added FastAPI backend, install dependencies and start uvicorn:
+
+```bash
+source venv/bin/activate  # if using a venv
+pip install -r requirements.txt
+uvicorn src.api.app:app --reload --host 0.0.0.0 --port 8000
+```
+
+Then open the interactive API docs at: http://localhost:8000/docs
+
 ## API Documentation
 
 Once the application is running, visit `http://localhost:8000/docs` for interactive API documentation.

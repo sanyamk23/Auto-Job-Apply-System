@@ -1,5 +1,5 @@
 from typing import List, Dict, Any
-from api.linkedin_api import LinkedInAPI
+from src.api.linkedin_api import LinkedInAPI
 
 class JobSearchEngine:
     def __init__(self):
