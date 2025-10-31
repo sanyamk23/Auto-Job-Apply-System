@@ -1,59 +1,43 @@
 version: '3.8'
 
 services:
-  app:
-    build: .
-    ports:
-      - "8000:8000"
-    environment:
-      - DATABASE_URL=postgresql://job_user:job_password@db:5432/job_recommendation_db
-      - REDIS_URL=redis://redis:6379/0
-      - CELERY_BROKER_URL=redis://redis:6379/0
-      - CELERY_RESULT_BACKEND=redis://redis:6379/0
-    depends_on:
-      - db
-      - redis
-    volumes:
-      - .:/app
-    command: uvicorn src.main:app --host 0.0.0.0 --port 8000 --reload
-
   db:
-    image: postgres:13-alpine
+    image: postgres:15-alpine
+    container_name: job_recommendation_db
     environment:
-      POSTGRES_DB: job_recommendation_db
-      POSTGRES_USER: job_user
-      POSTGRES_PASSWORD: job_password
+      POSTGRES_DB: job_recommendation
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
     ports:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+      - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
-  redis:
-    image: redis:6-alpine
+  app:
+    build: .
+    container_name: job_recommendation_app
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_NAME=job_recommendation
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      - ENVIRONMENT=development
     ports:
-      - "6379:6379"
-
-  celery:
-    build: .
-    command: celery -A src.tasks.celery_app worker --loglevel=info
-    environment:
-      - CELERY_BROKER_URL=redis://redis:6379/0
-      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - "8000:8000"
     depends_on:
-      - redis
+      db:
+        condition: service_healthy
     volumes:
       - .:/app
-
-  celery-beat:
-    build: .
-    command: celery -A src.tasks.celery_app beat --loglevel=info
-    environment:
-      - CELERY_BROKER_URL=redis://redis:6379/0
-      - CELERY_RESULT_BACKEND=redis://redis:6379/0
-    depends_on:
-      - redis
-    volumes:
-      - .:/app
+      - /app/__pycache__
+    command: python src/main.py
 
 volumes:
   postgres_data:
